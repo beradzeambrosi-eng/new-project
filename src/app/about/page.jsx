@@ -1,11 +1,21 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./page.module.css";
 
 export default function testpage() {
     //let count = 0;
 
     const [count, setCount] = useState(0);
+
+    useEffect(() => {
+    console.log("გამარჯობა!");
+    //dependency array:
+    }, [count]);
+
+    useEffect(() => {
+    localStorage.setItem("userName", "uhui");
+
+    }, [])
 
 const incrementByOne = () => {
     //count++;
