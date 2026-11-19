@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import About from "./about/page";
+import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,19 +29,22 @@ const linksArray = [
   },
   {
     title: "Test page",
-    path: "/test",
+    path: "/test-page",
+  },
+  {
+    title: "Todo App",
+    path: "/todo",
   },
 ];
-
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body>
-        <header navigationData = {linksArray}/>
+        <Header navigationData={linksArray} />
         {children}
-        <footer/>
-        </body>
+        <Footer />
+      </body>
     </html>
   );
 }

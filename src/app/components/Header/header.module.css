@@ -1,19 +1,22 @@
 .headerCont {
-    padding: 15px 20px;
-    background-color: blue;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  padding: 15px 20px;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--global-max-width);
+  margin: 0 auto;
 }
+
 .navList {
-    display: flex;
-    gap: 20px;
-    list-style-type: none;
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
 }
-.navitem{
-    color: black;
-    text-decoration: none;
+.navItem {
+  color: black;
+  text-decoration: none;
 }
 .logo {
-    font-size: 25px;
+  font-size: 25px;
 }
