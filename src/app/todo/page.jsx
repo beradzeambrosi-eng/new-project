@@ -41,6 +41,7 @@ const Todo = () => {
    if(dataInStorage > 0) setTasksArray(dataInStorage);
    console.log(dataInStorage);
    
+   throw new Error("test")
   }, [])
 
   useEffect(() => {
