@@ -9,3 +9,10 @@
 :root {
     --global-max-width: 1000px;
 }
+.loaderCont {
+    text-align: center;
+}
+
+.notFoundCont {
+    margin: 0 auto;
+}
